@@ -15,6 +15,7 @@ export class ClientComponent implements OnInit {
 
   ngOnInit() {
     this.getClients();
+    console.log('test');
   }
   getClients(): void {
     this.dataservice.getClients().subscribe(
